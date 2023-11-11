@@ -1,3 +1,9 @@
+import { GeneralInfo } from 'components/GeneralInfo/GeneralInfo'
+
 export default function Home() {
-	return <main></main>
+	return (
+		<main>
+			<GeneralInfo />
+		</main>
+	)
 }

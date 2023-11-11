@@ -56,14 +56,18 @@
 		color: var(--clr-dark-200);
 	}
 
+	&_dark-100 {
+		color: var(--clr-dark-100);
+	}
+
 	&_light {
 		color: var(--clr-light);
 	}
 }
 
 .first-heading {
-	@include text(--fs-700, var(--clr-dark-800), 107%, 600);
+	@include text(var(--fs-700), var(--clr-dark-800), 107%, 600);
 }
 .second-heading {
-	@include text(--fs-600, var(--clr-dark-700), 100%, 700);
+	@include text(var(--fs-600), var(--clr-dark-700), 100%, 700);
 }

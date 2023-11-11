@@ -1,0 +1,12 @@
+@import 'assets/styles/base/mixins';
+
+.section {
+	margin-top: 21px;
+
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+		gap: 30px;
+		margin-top: 16px;
+	}
+}

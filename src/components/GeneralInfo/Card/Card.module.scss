@@ -1,0 +1,43 @@
+@import 'assets/styles/base/mixins';
+
+.card {
+	min-width: 257px;
+	background-color: var(--clr-light);
+	padding: 16px;
+	border-radius: var(--radius-400);
+
+	.header {
+		.date {
+			background-color: #fddf49;
+			border-radius: 100vh;
+			padding: 6px 8px;
+		}
+	}
+
+	.body {
+		margin-top: 12px;
+	}
+
+	.footer {
+		margin-top: 18px;
+	}
+
+	.header,
+	.footer {
+		@include flex-all-sb;
+		column-gap: 10px;
+	}
+
+	&:nth-child(1) {
+		@include border(#fddf49, left, 3px);
+	}
+	&:nth-child(2) {
+		@include border(#fdba72, left, 3px);
+	}
+	&:nth-child(3) {
+		@include border(#85efac, left, 3px);
+	}
+	&:nth-child(4) {
+		@include border(#7ed4fc, left, 3px);
+	}
+}
