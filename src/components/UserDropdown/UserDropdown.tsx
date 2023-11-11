@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import styles from './UserDropdown.module.scss'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { routes } from '../../utils/routes'
 
 export const UserDropdown: React.FC = () => {
 	const pathname = usePathname()
@@ -38,7 +39,7 @@ export const UserDropdown: React.FC = () => {
 				</button>
 			</div>
 			<div className={`${styles.options} ${optionsClass}`}>
-				<Link className={styles.option} href='/settings'>
+				<Link className={styles.option} href={routes.settings}>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						width='18'
