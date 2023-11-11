@@ -3,4 +3,5 @@
 .header {
 	@include flex-all-sb;
 	padding: var(--content-padding);
+	background-color: var(--clr-light);
 }

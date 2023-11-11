@@ -37,13 +37,14 @@
 		border: var(--border);
 		border-radius: var(--radius-300);
 		transition: var(--transition);
+		background-color: var(--clr-light);
 		padding: 8px;
 		transform: scale(0);
 		transform-origin: top;
 
 		.option {
 			@include hover {
-				background-color: var(--clr-dark-300);
+				background-color: var(--clr-dark-200);
 			}
 			@include flex-v-center;
 			column-gap: 10px;
