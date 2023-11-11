@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import 'assets/styles/index.scss'
+import { Header } from 'components/Header/Header'
 
 export const metadata: Metadata = {
 	title: 'Agra Holdings',
@@ -26,7 +27,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html className={inter.className} lang='en'>
-			<body>{children}</body>
+			<body>
+				<Header />
+				{children}
+			</body>
 		</html>
 	)
 }

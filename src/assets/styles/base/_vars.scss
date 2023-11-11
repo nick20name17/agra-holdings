@@ -21,16 +21,17 @@
 
 	--transition: 0.3s;
 
-    --border: 1px solid var(--clr-dark-300)
+	--border: 1px solid var(--clr-dark-300);
 
-    --radius-600: 18px;
-    --radius-500: 16px;
-    --radius-400: 14px;
-    --radius-300: 10px;
-    --radius-200: 8px;
+	--radius-600: 18px;
+	--radius-500: 16px;
+	--radius-400: 14px;
+	--radius-300: 10px;
+	--radius-200: 8px;
+	--radius-100: 6px;
 
 	--content-width: 1124px;
-    --content-offset: 40px;
+	--content-offset: 40px;
 	--content-padding: 14px;
 	--container-width: calc(var(--content-width) + (2 * var(--content-padding)));
 }

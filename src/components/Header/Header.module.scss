@@ -1,0 +1,6 @@
+@import 'assets/styles/base/mixins';
+
+.header {
+	@include flex-all-sb;
+	padding: var(--content-padding);
+}

@@ -1,0 +1,62 @@
+@import 'assets/styles/base/mixins';
+
+.dropdown {
+	position: relative;
+
+	.menu {
+		@include hover {
+			background-color: var(--clr-dark-300);
+		}
+		@include flex-v-center;
+		column-gap: 16px;
+
+		background-color: var(--clr-dark-200);
+		padding: 11px;
+		border-radius: var(--radius-300);
+
+		font-size: var(--fs-300);
+		font-weight: 600;
+
+		cursor: pointer;
+
+		.btn {
+			transition: var(--transition);
+
+			&.rotated {
+				transform: rotate(-90deg);
+				transition: var(--transition);
+			}
+		}
+	}
+
+	.options {
+		position: absolute;
+		top: 62px;
+		left: 0;
+		right: 0;
+		border: var(--border);
+		border-radius: var(--radius-300);
+		transition: var(--transition);
+		padding: 8px;
+		transform: scale(0);
+		transform-origin: top;
+
+		.option {
+			@include hover {
+				background-color: var(--clr-dark-300);
+			}
+			@include flex-v-center;
+			column-gap: 10px;
+
+			padding: 11px;
+			border-radius: var(--radius-100);
+
+			cursor: pointer;
+		}
+
+		&.open {
+			transition: var(--transition);
+			transform: scale(1);
+		}
+	}
+}
