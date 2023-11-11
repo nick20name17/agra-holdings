@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 
 import 'assets/styles/index.scss'
 import { Header } from 'components/Header/Header'
+import { PropsWithChildren } from 'react'
 
 export const metadata: Metadata = {
 	title: 'Agra Holdings',
@@ -19,17 +20,15 @@ const inter = Inter({
 	display: 'swap'
 })
 
-export default function RootLayout({
-	children
-}: {
-	children: React.ReactNode
-}) {
+const RootLayout: React.FC<PropsWithChildren> = ({ children }) => {
 	return (
 		<html className={inter.className} lang='en'>
 			<body>
 				<Header />
-				{children}
+				<main>{children}</main>
 			</body>
 		</html>
 	)
 }
+
+export default RootLayout

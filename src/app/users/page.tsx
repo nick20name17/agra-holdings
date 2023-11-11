@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 }
 
 const Users = () => {
-	return <main>Users</main>
+	return <>Users</>
 }
 
 export default Users

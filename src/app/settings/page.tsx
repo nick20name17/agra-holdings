@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 }
 
 const Settings = () => {
-	return <main>Settings</main>
+	return <>Settings</>
 }
 
 export default Settings

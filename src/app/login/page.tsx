@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 }
 
 const Login = () => {
-	return <main>Login</main>
+	return <>Login</>
 }
 
 export default Login
