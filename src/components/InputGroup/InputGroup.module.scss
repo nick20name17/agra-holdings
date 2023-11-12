@@ -1,0 +1,33 @@
+@import 'assets/styles/base/mixins';
+
+.inputGroup {
+	@include flex-column;
+	row-gap: 12px;
+
+	.label {
+		font-size: var(--fs-400);
+		font-weight: 500;
+		color: var(--clr-dark-500);
+	}
+	.input {
+		border: var(--border);
+		padding: 18px;
+		font-size: var(--fs-300);
+		font-weight: 500;
+		border-radius: var(--radius-200);
+
+		&::placeholder {
+			color: var(--clr-dark-500);
+		}
+
+		&:focus {
+			outline: 1px solid var(--clr-dark-800);
+		}
+	}
+
+	&:focus-within {
+		.label {
+			color: var(--clr-dark-800);
+		}
+	}
+}

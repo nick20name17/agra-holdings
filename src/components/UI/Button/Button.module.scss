@@ -1,0 +1,14 @@
+@import 'assets/styles/base/mixins';
+
+.btn {
+	font-style: var(--fs-600);
+	font-weight: 600;
+	color: var(--clr-light);
+	background-color: var(--clr-main);
+	border-radius: var(--radius-200);
+	min-height: 56px;
+
+	@include hover {
+		filter: brightness(95%);
+	}
+}

@@ -1,0 +1,30 @@
+@import 'assets/styles/base/mixins';
+
+.body {
+	max-width: 610px;
+	margin: 40px auto 0 auto;
+	padding: 32px;
+	border-radius: var(--radius-800);
+	background-color: var(--clr-light);
+
+	.form {
+		margin-top: 24px;
+
+		.inputs {
+			@include flex-column;
+			row-gap: 24px;
+
+			.options {
+				@include flex-all-sb;
+				flex-wrap: wrap;
+				gap: 10px;
+
+				.link {
+					@include hover {
+						color: var(--clr-dark-800);
+					}
+				}
+			}
+		}
+	}
+}

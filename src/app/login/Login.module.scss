@@ -1,0 +1,11 @@
+@import 'assets/styles/base/mixins';
+
+.login {
+	@include flex-all-center;
+	min-height: calc(100vh - 100px);
+
+	.content {
+		width: 100%;
+		margin-top: 40px;
+	}
+}
