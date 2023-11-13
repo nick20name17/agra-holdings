@@ -1,0 +1,27 @@
+@import 'assets/styles/base/mixins';
+
+.header {
+	@include flex-all-sb;
+	column-gap: 14px;
+
+	.left {
+		@include flex-v-center;
+		column-gap: 12px;
+
+		.arrow {
+			padding: 4px;
+		}
+	}
+
+	.btn {
+		@include hover {
+			background-color: var(--clr-dark-200);
+		}
+		@include flex-v-center;
+		column-gap: 10px;
+
+		background-color: var(--clr-light);
+		padding: 11px;
+		border-radius: var(--radius-300);
+	}
+}

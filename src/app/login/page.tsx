@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 import { LoginForm } from 'components/LoginForm/LoginForm'
 
-import styles from './Login.module.scss'
+import styles from './page.module.scss'
 
 export const metadata: Metadata = {
 	title: 'Login'
