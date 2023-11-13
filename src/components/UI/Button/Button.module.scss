@@ -11,4 +11,9 @@
 	@include hover {
 		filter: brightness(95%);
 	}
+
+	&_icon {
+		@include flex-all-center;
+		column-gap: 10px;
+	}
 }
