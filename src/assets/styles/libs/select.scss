@@ -1,0 +1,47 @@
+.react-select__control {
+	min-width: 94px;
+	min-height: 48px !important;
+	border-radius: var(--radius-200) !important;
+	border: var(--border);
+	padding: 18px 15px;
+	color: var(--clr-dark-500);
+	font-size: var(--fs-300);
+	font-weight: 500;
+	cursor: pointer !important;
+}
+
+.react-select__control--menu-is-open {
+	border: var(--border);
+}
+
+.react-select__menu {
+	background-color: var(--clr-dark-200);
+	border-radius: var(--radius-200);
+}
+
+.react-select__menu-list {
+	font-size: var(--fs-300);
+	font-weight: 500;
+	border-radius: var(--radius-200);
+}
+
+.react-select__option {
+	padding: 18px 15px;
+	color: var(--clr-dark-500);
+	cursor: pointer !important;
+
+	@include hover {
+		background-color: var(--clr-dark-300);
+	}
+}
+
+// .react-select__option--is-selected {
+// 	background-color: var(--clr-dark-300);
+// 	color: var(--clr-dark-800);
+
+// 	@include hover {
+// 		background-color: var(--clr-dark-500);
+
+// 		color: var(--clr-dark-800);
+// 	}
+// }
