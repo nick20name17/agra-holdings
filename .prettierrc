@@ -8,5 +8,18 @@
 	"trailingComma": "none",
 	"printWidth": 80,
 	"importOrderSeparation": true,
-	"importOrderSortSpecifiers": true
+	"importOrderSortSpecifiers": true,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"],
+	"importOrder": [
+		"<THIRD_PARTY_MODULES>",
+		"^components/(.*)$",
+		"^providers/(.*)$",
+		"^aoi/(.*)$",
+		"^assets/(.*)$",
+		"^types/(.*)$",
+		"^../(.*)",
+		"^./(.*)",
+		"(.css)$",
+		"(.scss)$"
+	]
 }

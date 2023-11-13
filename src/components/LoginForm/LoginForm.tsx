@@ -1,8 +1,10 @@
-import { InputGroup } from 'components/InputGroup/InputGroup'
-import styles from './LoginForm.module.scss'
-import { Button } from 'components/UI/Button/Button'
 import Link from 'next/link'
+
 import { CheckboxGroup } from 'components/CheckboxGroup/CheckboxGroup'
+import { InputGroup } from 'components/InputGroup/InputGroup'
+import { Button } from 'components/UI/Button/Button'
+
+import styles from './LoginForm.module.scss'
 
 export const LoginForm = () => {
 	return (

@@ -1,4 +1,5 @@
 import { UserDropdown } from 'components/UserDropdown/UserDropdown'
+
 import { Logo } from '../Logo/Logo'
 
 import styles from './Header.module.scss'

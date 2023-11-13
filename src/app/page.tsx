@@ -1,5 +1,6 @@
-import { GeneralInfo } from 'components/GeneralInfo/GeneralInfo'
 import { Metadata } from 'next'
+
+import { GeneralInfo } from 'components/GeneralInfo/GeneralInfo'
 
 export const metadata: Metadata = {
 	title: 'Agra Holdings',

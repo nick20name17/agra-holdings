@@ -1,5 +1,6 @@
-import { LoginForm } from 'components/LoginForm/LoginForm'
 import { Metadata } from 'next'
+
+import { LoginForm } from 'components/LoginForm/LoginForm'
 
 import styles from './Login.module.scss'
 

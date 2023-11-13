@@ -1,15 +1,17 @@
 'use client'
-import { useState, useEffect } from 'react'
 
-import styles from './UserDropdown.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { routes } from '../../utils/routes'
+import { useEffect, useState } from 'react'
 
 import arrowDrowdownIcon from 'assets/images/arrow-dropdown.svg'
-import settingsIcon from 'assets/images/settings.svg'
 import logoutIcon from 'assets/images/logout.svg'
+import settingsIcon from 'assets/images/settings.svg'
+
+import { routes } from '../../utils/routes'
+
+import styles from './UserDropdown.module.scss'
 
 export const UserDropdown: React.FC = () => {
 	const pathname = usePathname()

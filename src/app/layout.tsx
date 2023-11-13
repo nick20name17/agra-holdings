@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { PropsWithChildren } from 'react'
+
+import { Header } from 'components/Header/Header'
 
 import 'assets/styles/index.scss'
-import { Header } from 'components/Header/Header'
-import { PropsWithChildren } from 'react'
 
 export const metadata: Metadata = {
 	title: 'Agra Holdings',
