@@ -6,6 +6,10 @@ body {
 	max-width: var(--container-width);
 	padding: var(--content-padding);
 	margin: 0 auto;
+
+	&_sm {
+		max-width: var(--container-sm-width);
+	}
 }
 
 .section {

@@ -1,0 +1,25 @@
+@import 'assets/styles/base/mixins';
+
+.card {
+	@include hover {
+		background-color: var(--clr-dark-200);
+	}
+	@include flex-all-sb;
+	column-gap: 14px;
+
+	background-color: var(--clr-light);
+	padding: 18px 20px;
+	border-radius: var(--radius-500);
+
+	cursor: pointer;
+
+	.header {
+		@include flex-v-center;
+		column-gap: 14px;
+
+		.icon img {
+			width: 28px;
+			height: 28px;
+		}
+	}
+}
