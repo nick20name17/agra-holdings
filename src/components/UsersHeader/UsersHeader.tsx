@@ -1,7 +1,5 @@
-import Image from 'next/image'
-
-import addCircleIcon from 'assets/images/add-circle.svg'
-import arrowLeftIcon from 'assets/images/arrow-left.svg'
+import AddCircleIcon from 'assets/images/add-circle.svg'
+import ArrowLeftIcon from 'assets/images/arrow-left.svg'
 
 import styles from './UserHeader.module.scss'
 
@@ -10,7 +8,7 @@ const UsersHeader = () => {
 		<div className={styles.header}>
 			<div className={styles.left}>
 				<button className={styles.arrow}>
-					<Image priority src={arrowLeftIcon} alt='arrow' />
+					<ArrowLeftIcon />
 				</button>
 				<h1 className='text_dark-800 text_fs-600 text_semi-bold'>
 					User Management
@@ -19,7 +17,7 @@ const UsersHeader = () => {
 			<button
 				className={`text_dark-800 text_semi-bold text_fs-400 ${styles.btn}`}
 			>
-				<Image priority src={addCircleIcon} alt='add' />
+				<AddCircleIcon />
 				Add New User
 			</button>
 		</div>

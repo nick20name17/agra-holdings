@@ -1,11 +1,10 @@
 import { Metadata } from 'next'
-import Image from 'next/image'
 import React from 'react'
 
 import { SettingsCard } from 'components/SettingsCard/SettingsCard'
 
-import settingsIcon from 'assets/images/settings.svg'
-import userIcon from 'assets/images/user.svg'
+import SettingsIcon from 'assets/images/settings.svg'
+import UserIcon from 'assets/images/user.svg'
 
 import styles from './page.module.scss'
 
@@ -23,11 +22,11 @@ const Settings = () => {
 				<div className={styles.list}>
 					<SettingsCard
 						text='Account Settings'
-						icon={<Image priority src={settingsIcon} alt='Settings' />}
+						icon={<SettingsIcon />}
 					/>
 					<SettingsCard
 						text='User Management'
-						icon={<Image priority src={userIcon} alt='User' />}
+						icon={<UserIcon />}
 					/>
 				</div>
 			</div>

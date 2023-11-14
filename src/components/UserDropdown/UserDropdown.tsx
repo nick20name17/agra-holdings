@@ -1,13 +1,12 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
-import arrowDrowdownIcon from 'assets/images/arrow-dropdown.svg'
-import logoutIcon from 'assets/images/logout.svg'
-import settingsIcon from 'assets/images/settings.svg'
+import ArrowDrowdownIcon from 'assets/images/arrow-dropdown.svg'
+import LogoutIcon from 'assets/images/logout.svg'
+import SettingsIcon from 'assets/images/settings.svg'
 
 import { routes } from '../../utils/routes'
 
@@ -31,16 +30,16 @@ export const UserDropdown: React.FC = () => {
 			<button onClick={handleClick} className={styles.menu}>
 				<span>Arnold Frey</span>
 				<span className={`${styles.btn} ${menuBtnClass}`}>
-					<Image priority src={arrowDrowdownIcon} alt='Arrow' />
+					<ArrowDrowdownIcon/>
 				</span>
 			</button>
 			<div className={`${styles.options} ${optionsClass}`}>
 				<Link className={styles.option} href={routes.settings}>
-					<Image priority src={settingsIcon} alt='Settings' />
+					<SettingsIcon />
 					<span>Settings</span>
 				</Link>
 				<Link className={styles.option} href='/'>
-					<Image priority src={logoutIcon} alt='Logout' />
+					<LogoutIcon/>
 					<span>Logout</span>
 				</Link>
 			</div>

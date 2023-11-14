@@ -2,9 +2,6 @@
 
 import ReactSelect from 'react-select'
 
-import downArrowIcon from 'assets/images/arrow-down.svg'
-
-import styles from './Select.module.scss'
 
 interface Option {
 	label: string

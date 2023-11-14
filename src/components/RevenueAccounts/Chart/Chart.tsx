@@ -1,12 +1,11 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
 
 import { Button } from 'components/UI/Button/Button'
 import Select from 'components/UI/Select/Select'
 
-import refreshIcon from 'assets/images/refresh.svg'
+import RefreshIcon from 'assets/images/refresh.svg'
 
 import styles from './Chart.module.scss'
 
@@ -51,7 +50,7 @@ const Chart = () => {
 					placeholder='Select an account'
 					onChange={onSelectAccountChange}
 				/>
-				<Button icon={<Image priority src={refreshIcon} alt='Refresh' />}>
+				<Button icon={<RefreshIcon />}>
 					Update
 				</Button>
 			</div>

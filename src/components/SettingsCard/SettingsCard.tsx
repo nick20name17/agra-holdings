@@ -1,6 +1,4 @@
-import Image from 'next/image'
-
-import arrowRightIcon from 'assets/images/arrow-right.svg'
+import ArrowRightIcon from 'assets/images/arrow-right.svg'
 
 import styles from './Settings.module.scss'
 
@@ -16,7 +14,7 @@ export const SettingsCard: React.FC<SettingsCardProps> = ({ text, icon }) => {
 				<span className={styles.icon}>{icon}</span>
 				<h2 className='text_dark-800 text_semi-bold text_fs-400'>{text}</h2>
 			</div>
-			<Image priority src={arrowRightIcon} alt='arrow' />
+			<ArrowRightIcon />
 		</div>
 	)
 }
