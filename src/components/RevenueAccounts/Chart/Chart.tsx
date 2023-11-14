@@ -22,7 +22,6 @@ const Chart: React.FC<RevenuesProps> = ({ revenues }) => {
 	const onSelectYearChange = (option: MultiOption | SingleOption) => {
 		if (option) {
 			const years = (option as MultiOption).map(year => year.value)
-
 			setCurrentYears(years)
 		}
 	}
