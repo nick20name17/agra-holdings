@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 	}
 }
 
-export default function Home() {
+const Home = async () => {
 	return (
 		<>
 			<GeneralInfo />
@@ -21,3 +21,5 @@ export default function Home() {
 		</>
 	)
 }
+
+export default Home

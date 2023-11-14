@@ -1,5 +1,4 @@
 import Chart from './Chart/Chart'
-import styles from './RevenueAccounts.module.scss'
 
 export const RevenueAccounts = () => {
 	return (

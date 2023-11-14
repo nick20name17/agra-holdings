@@ -1,6 +1,5 @@
 'use client'
 
-import dynamic from 'next/dynamic'
 import ApexChart from 'react-apexcharts'
 
 import { Button } from 'components/UI/Button/Button'
