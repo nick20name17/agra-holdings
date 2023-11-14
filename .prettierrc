@@ -1,5 +1,5 @@
 {
-	"tabWidth": 2,
+	"tabWidth": 4,
 	"useTabs": true,
 	"singleQuote": true,
 	"jsxSingleQuote": true,
@@ -16,6 +16,7 @@
 		"^providers/(.*)$",
 		"^aoi/(.*)$",
 		"^assets/(.*)$",
+		"^config/(.*)$",
 		"^types/(.*)$",
 		"^../(.*)",
 		"^./(.*)",

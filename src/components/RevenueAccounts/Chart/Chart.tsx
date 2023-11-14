@@ -1,15 +1,16 @@
 'use client'
 
 import dynamic from 'next/dynamic'
+import ApexChart from 'react-apexcharts'
 
 import { Button } from 'components/UI/Button/Button'
 import Select from 'components/UI/Select/Select'
 
 import RefreshIcon from 'assets/images/refresh.svg'
 
-import styles from './Chart.module.scss'
+import { charOptions } from 'config/chartOptions'
 
-const ApexChart = dynamic(() => import('react-apexcharts'), { ssr: false })
+import styles from './Chart.module.scss'
 
 const Chart = () => {
 	const onSelectAccountChange = () => {}
@@ -20,15 +21,6 @@ const Chart = () => {
 			value: '1'
 		}
 	]
-
-	const option = {
-		chart: {
-			id: 'apexchart-example'
-		},
-		xaxis: {
-			categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
-		}
-	}
 
 	const series = [
 		{
@@ -50,11 +42,9 @@ const Chart = () => {
 					placeholder='Select an account'
 					onChange={onSelectAccountChange}
 				/>
-				<Button icon={<RefreshIcon />}>
-					Update
-				</Button>
+				<Button icon={<RefreshIcon />}>Update</Button>
 			</div>
-			<ApexChart type='line' options={option} series={series} />
+			<ApexChart options={charOptions} series={series} />
 		</div>
 	)
 }

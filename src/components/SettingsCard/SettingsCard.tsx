@@ -12,7 +12,9 @@ export const SettingsCard: React.FC<SettingsCardProps> = ({ text, icon }) => {
 		<div className={styles.card}>
 			<div className={styles.header}>
 				<span className={styles.icon}>{icon}</span>
-				<h2 className='text_dark-800 text_semi-bold text_fs-400'>{text}</h2>
+				<h2 className='text_dark-800 text_semi-bold text_fs-400'>
+					{text}
+				</h2>
 			</div>
 			<ArrowRightIcon />
 		</div>

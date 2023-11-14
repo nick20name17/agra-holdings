@@ -8,7 +8,7 @@ import ArrowDrowdownIcon from 'assets/images/arrow-dropdown.svg'
 import LogoutIcon from 'assets/images/logout.svg'
 import SettingsIcon from 'assets/images/settings.svg'
 
-import { routes } from '../../utils/routes'
+import { routes } from 'config/routes'
 
 import styles from './UserDropdown.module.scss'
 
@@ -30,7 +30,7 @@ export const UserDropdown: React.FC = () => {
 			<button onClick={handleClick} className={styles.menu}>
 				<span>Arnold Frey</span>
 				<span className={`${styles.btn} ${menuBtnClass}`}>
-					<ArrowDrowdownIcon/>
+					<ArrowDrowdownIcon />
 				</span>
 			</button>
 			<div className={`${styles.options} ${optionsClass}`}>
@@ -39,7 +39,7 @@ export const UserDropdown: React.FC = () => {
 					<span>Settings</span>
 				</Link>
 				<Link className={styles.option} href='/'>
-					<LogoutIcon/>
+					<LogoutIcon />
 					<span>Logout</span>
 				</Link>
 			</div>
