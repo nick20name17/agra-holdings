@@ -1,3 +1,4 @@
+import { getRevenue } from 'api/getRevenue'
 import { Metadata } from 'next'
 
 import { GeneralInfo } from 'components/GeneralInfo/GeneralInfo'
@@ -13,10 +14,11 @@ export const metadata: Metadata = {
 }
 
 const Home = async () => {
+	const revenues = await getRevenue()
 	return (
 		<>
 			<GeneralInfo />
-			<RevenueAccounts />
+			<RevenueAccounts revenues={revenues} />
 			<TotalRevenue />
 		</>
 	)

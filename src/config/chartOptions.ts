@@ -1,14 +1,12 @@
 import type { ApexOptions } from 'apexcharts'
 
 export const charOptions: ApexOptions = {
-	chart: { height: 380, type: 'line', zoom: { enabled: false } },
+	chart: { zoom: { enabled: false } },
 	dataLabels: { enabled: false },
-	stroke: { curve: 'straight' },
+	stroke: { curve: 'smooth' },
 	xaxis: {
 		categories: [],
 		labels: {
-			rotate: -45,
-			rotateAlways: true,
 			offsetY: 4,
 			style: {
 				colors: ['#171717'],
@@ -37,6 +35,15 @@ export const charOptions: ApexOptions = {
 			formatter: function (val) {
 				return '$ ' + val
 			}
+		}
+	},
+	fill: {
+		type: 'gradient',
+		gradient: {
+			shadeIntensity: 1,
+			opacityFrom: 0.7,
+			opacityTo: 0.9,
+			stops: [0, 90, 100]
 		}
 	},
 	colors: [

@@ -15,3 +15,7 @@ interface Revenue {
 }
 
 export type RevenueResponse = Revenue[]
+
+export interface RevenuesProps {
+	revenues: RevenueResponse
+}
