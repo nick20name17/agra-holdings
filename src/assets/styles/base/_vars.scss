@@ -12,6 +12,7 @@
 	--clr-dark-200: #e7e8e9;
 	--clr-dark-100: #f3f4f4;
 	--clr-light: #fff;
+	--clr-danger: #e50f0f;
 
 	--fs-700: 30px;
 	--fs-600: 24px;
@@ -36,7 +37,9 @@
 	--content-sm-width: 800px;
 	--content-offset: 40px;
 	--content-padding: 14px;
-	--container-width: calc(var(--content-width) + (2 * var(--content-padding)));
+	--container-width: calc(
+		var(--content-width) + (2 * var(--content-padding))
+	);
 	--container-sm-width: calc(
 		var(--content-sm-width) + (2 * var(--content-padding))
 	);

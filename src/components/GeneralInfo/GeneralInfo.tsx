@@ -13,7 +13,7 @@ export const GeneralInfo = async () => {
 			label: getFormattedCurrentDate(),
 			totalPaid: dashboard.this_month_sales[1].total_paid,
 			additialInfo: {
-				heading: 'Last Year',
+				heading: 'Last Year:',
 				totalPaid: dashboard.this_month_sales[0].total_paid
 			}
 		},
@@ -21,7 +21,7 @@ export const GeneralInfo = async () => {
 			heading: 'Year To Date:',
 			totalPaid: dashboard.ytd_sales[1].total_paid,
 			additialInfo: {
-				heading: 'Last Year',
+				heading: 'Last Year:',
 				totalPaid: dashboard.ytd_sales[0].total_paid
 			}
 		},
@@ -33,7 +33,7 @@ export const GeneralInfo = async () => {
 			heading: 'Open Sales Orders:',
 			totalPaid: dashboard.so_amount_sum,
 			additialInfo: {
-				heading: 'Tax',
+				heading: 'Tax:',
 				totalPaid: dashboard.so_tax_sum
 			}
 		}
@@ -46,6 +46,7 @@ export const GeneralInfo = async () => {
 				<div className={styles.cards}>
 					{cards.map(card => (
 						<Card
+							key={card.heading}
 							heading={card.heading}
 							label={card.label}
 							totalPaid={card.totalPaid}

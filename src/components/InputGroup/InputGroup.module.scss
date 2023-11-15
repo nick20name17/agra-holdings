@@ -9,6 +9,7 @@
 		font-weight: 500;
 		color: var(--clr-dark-500);
 	}
+
 	.input {
 		border: var(--border);
 		padding: 18px;
@@ -23,6 +24,15 @@
 		&:focus {
 			outline: 1px solid var(--clr-dark-800);
 		}
+	}
+
+	.invalidInput {
+		outline: 1px solid var(--clr-danger);
+	}
+
+	.error {
+		font-size: var(--fs-200);
+		color: var(--clr-danger);
 	}
 
 	&:focus-within {
