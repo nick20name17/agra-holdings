@@ -25,7 +25,7 @@
 	.header,
 	.footer {
 		@include flex-all-sb;
-		column-gap: 10px;
+		column-gap: 8px;
 	}
 
 	&:nth-child(1) {
